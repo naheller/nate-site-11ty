@@ -1,0 +1,69 @@
+body {
+  color: #333;
+  font-family: 'New York', Georgia, serif;
+  margin: 0;
+}
+
+a {
+  color: tomato;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+#home-container-outer {
+  position: relative;
+  height: 100vh;
+}
+
+#home-container-inner {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  max-width: 650px;
+  padding: 1rem;
+  margin: auto;
+}
+
+#home-header {
+  font-size: 3rem;
+  margin: 2rem 0 3rem 0;
+}
+
+#home-paragraph {
+  font-size: 1.5rem;
+  font-family: 'SF Pro';
+}
+
+#home-paragraph-small {
+  font-size: 1.25rem;
+  font-family: 'SF Pro';
+  max-width: 400px;
+  margin: auto;
+}
+
+.font-gray {
+  color: #666;
+}
+
+img#nate-photo {
+  border-radius: 100%;
+  width: 175px;
+}
+
+@media (max-width: 480px) {
+  #home-header {
+    font-size: 2.5rem;
+  }
+  #home-paragraph {
+    font-size: 1.25rem;
+  }
+  #home-paragraph-small {
+    font-size: 1rem;
+  }
+}
